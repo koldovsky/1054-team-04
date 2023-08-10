@@ -1,0 +1,49 @@
+
+
+.offers {
+background: rgba(0, 0, 0, 0.11);
+}
+
+.offers-title-little {
+    font-size: 11px;
+    text-align: center;
+    color: var(--orange-text-color);
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.offers-title-big {
+    font-family: vollkorn;
+    font-style: 34px;
+    text-align: center;
+    color: rgb(75, 86, 106);
+    font-weight: 400;
+}
+
+.offers-title-decor {
+width: 70px;
+margin: auto;
+}
+
+.offers-title-medium{
+    font-size: 19px;
+    font-weight: 500;
+    color: rgb(130, 134, 143);
+    text-align: center;
+}
+
+.canape, .glass, .girls{
+    width: 10%;
+}
+
+.offers-list-special-offers .subtitle {
+font-size: 15px;
+font-weight: 700;
+font-style: italic;
+text-align: center;
+color: rgb(130, 134, 143);
+}
+
+.offers-list-special-offers .title{
+
+}
