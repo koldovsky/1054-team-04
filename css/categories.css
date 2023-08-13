@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&family=Vollkorn&display=swap');
+
+.categories__text {
+    font-family: 'Roboto Serif', serif;
+    font-size: 11px;
+    color: rgb(255, 93, 40);
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    letter-spacing: 1.1px;
+    line-height: 15.73px;
+}
+
+.categories__header {
+    font-family: 'Vollkorn', serif;
+    font-size: 34px;
+    color: rgb(75, 86, 106);
+    text-align: center;
+    font-weight: 400;
+    line-height: 40.8px;
+    overflow-wrap: break-word;
+}
+
+.categories__description {
+    color: rgb(130, 134, 143);
+    font-family: 'Roboto Serif', serif;
+    font-size: 19px;
+    text-align: center;
+    font-weight: 500;
+
+}
