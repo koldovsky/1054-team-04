@@ -34,7 +34,15 @@
 }
 
 .features-section__image-inner {
-    object-position: 0 50%;
+    width: 10%; 
+    max-width: 250px; 
+    transition: width 0.5s; 
+}
+
+@media (max-width: 768px) {
+    .features-section__image-inner {
+       width: 40%; 
+    }
 }
 
 
