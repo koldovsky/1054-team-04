@@ -1,0 +1,76 @@
+
+
+.offers {
+background: rgba(0, 0, 0, 0.11);
+}
+
+.offers-title-little {
+    font-size: 11px;
+    text-align: center;
+    color: var(--orange-text-color);
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.offers-title-big {
+    font-family: vollkorn;
+    font-size: 34px;
+    text-align: center;
+    color: rgb(75, 86, 106);
+    font-weight: 400;
+}
+
+.offers-title-decor {
+width: 70px;
+margin: auto;
+}
+
+.offers-title-medium{
+    font-size: 19px;
+    font-weight: 500;
+    color: rgb(130, 134, 143);
+    text-align: center;
+}
+
+.canape, .glass, .girls{
+    width: 10%;
+}
+
+.offers-list-special-offers .text-block{
+    background-color: rgb(255, 255, 255);
+}
+
+.offers-list-special-offers .subtitle {
+font-size: 15px;
+font-weight: 700;
+font-style: italic;
+text-align: center;
+color: rgb(130, 134, 143);
+}
+
+.offers-list-special-offers .title{
+font-family: vollkorn;
+font-size: 23px;
+font-weight: 400;
+text-align: left;
+}
+
+.offers-list-special-offers .offer-text{
+    color: rgb(155, 158, 164);
+    font-size: 17px;
+    text-align: justify;
+}
+
+.button{
+    color: rgb(255, 255, 255);
+    font-style: 16px;
+    font-weight: 600;
+    background-color: var(--orange-text-color);
+    margin: 50px;
+    padding: 5px;
+    text-decoration: none;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 25px;
+    }

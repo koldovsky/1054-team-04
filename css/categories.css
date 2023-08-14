@@ -1,0 +1,32 @@
+/* Fatyliak Andrii*/
+.categories__text {
+    font-family: var(--font-text-menu-p);
+    font-size: 11px;
+    color: var(--orange-text-color);
+    font-weight: 900;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    letter-spacing: 1.1px;
+    line-height: 15.73px;
+}
+
+.categories__header {
+    font-family: var(--font-text-menu-h);
+    font-size: 34px;
+    color: var(--color-text-header);
+    font-weight: 400;
+    line-height: 40.8px;
+    overflow-wrap: break-word;
+}
+
+.categories__description {
+    color: var(--color-text-subtitles);
+    font-family: 'Roboto Serif', serif;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.categories__text, .categories__header, .categories__description {
+    text-align: center;
+}
+

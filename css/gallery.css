@@ -1,0 +1,20 @@
+@import url(global.css);
+.gallery-section {
+    background-color: #4b566a;
+    display: flex;
+    max-width: 100%;
+    
+}
+.gallery-section-items {
+    max-width: 100%;
+    width: 165px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+}
