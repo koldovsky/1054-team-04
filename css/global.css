@@ -7,9 +7,11 @@
 }
 
 :root {
---orange-text-color: rgb(255, 93, 40);
-scroll-behavior: smooth;
-font-family: 'Roboto', sans-serif;
+    --orange-text-color: rgb(255, 93, 40);
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    --w-title-offset: 62px;
 }
 
 img {
