@@ -34,7 +34,7 @@
 }
 
 .features-section__image-inner {
-    width: 10%; 
+    width: 30%; 
     max-width: 250px; 
     transition: width 0.5s; 
 }
@@ -52,10 +52,21 @@
     box-sizing: border-box;
 }
 
+@media (max-width: 320px) {
+    .features-section__image-inner {
+        min-width: 70px;
+    }
+}
 
 @media (min-width: 768px) {
     .features-section__benefits-block {
-        width: calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (min-width: 992px) {
+    .features-section__benefits-block {
+       max-width: calc(33.33% - 20px);
     }
 }
 
