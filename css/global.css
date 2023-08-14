@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;;700;900&family=Vollkorn&display=swap');
- 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&family=Vollkorn&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -12,10 +12,16 @@
     font-family: 'Roboto', sans-serif;
     text-align: center;
     --w-title-offset: 62px;
+    --orange-text-color: rgb(255, 93, 40);
+    --color-text-header: rgb(75, 86, 106);
+    --color-text-subtitles: rgb(130, 134, 143);
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    --font-text-menu-p: 'Roboto Serif', serif;
+    --font-text-menu-h: 'Vollkorn', serif;
 }
 
 img {
     display:block;
     max-width: 100%;
-    margin: auto;
 }
