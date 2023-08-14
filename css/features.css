@@ -39,11 +39,31 @@
     transition: width 0.5s; 
 }
 
-@media (max-width: 768px) {
-    .features-section__image-inner {
-       width: 40%; 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.features-section__benefits-block {
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+@media (min-width: 768px) {
+    .features-section__benefits-block {
+        width: calc(50% - 20px);
     }
 }
+
+
+
+
+
+
 
 
 
