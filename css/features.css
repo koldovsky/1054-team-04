@@ -1,0 +1,41 @@
+.features-section {
+    background-color: var(--on-image-text-color);
+    padding: 50px 0;
+}
+
+.features-section__benefits {
+    padding: 0 15px;
+}
+
+.features-section__title {
+    color: var(--accent-text-color);
+    font-size: 11px;
+    padding: 20px 0;
+    font-weight: 900;
+}
+
+.features-section__subtitle {
+    color: var(--color-text-header);
+    font-family: var(--font-text-menu-h);
+    font-size: 34px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.features-section__call-to-action {
+    color: var(--color-text-subtitles);
+    font-size: 19px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+.features-section__benefits-block {
+    padding: 0 20px;
+}
+
+.features-section__image-inner {
+    object-position: 0 50%;
+}
+
+
+
