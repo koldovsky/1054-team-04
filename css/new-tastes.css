@@ -27,6 +27,7 @@
     font-family: 'Roboto', sans-serif;
     color: #82868f;
     font-size: 19px;
+    padding: 45px;
     display: inline-block;
     position: relative;
     min-width: 20px;
@@ -34,13 +35,21 @@
 }
 
 .new-tastes__blocks{
-    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .new-tastes__block{
-    display: flex;
-    justify-content: center;
+    width: calc(50% - 20px);
+    margin: 10px;
+    text-align: center;
     border-radius: 6px;
     box-shadow: -3px 3px 26px 5px rgba(130, 134, 143,  0.25);
+}
+@media screen and (max-width: 768px){
+    .new-tastes__block{
+        width: calc(100% - 20px);
+    }
 }
 .new-tastes__block-image{
     position: relative;
@@ -83,4 +92,7 @@
     top: 0;
     left: 0;
     object-fit: cover;
+}
+.new-tastes__image{
+    margin: 0 auto;
 }
