@@ -1,0 +1,113 @@
+.about-us {
+    background-color: var(--on-image-text-color);
+    background-image: url(../img/about-us/background-aboutus-home.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    gap: 20px;
+    align-items: center;
+}
+
+.about-us__image-container {
+    padding: 0 30px;
+}
+
+.about-us__image {
+   max-width: 100%;
+}
+
+.about-us__content {
+    text-align: left;
+    padding: 0 50px;
+}
+
+.about-us__title {
+    color: var(--accent-text-color);
+    font-size: 11px;
+    font-weight: 900;
+    padding: 20px 0;
+}
+
+.about-us__subtitle {
+    color: var(--color-text-header);
+    font-family: var(--font-text-menu-h);
+    font-size: 42px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.about-us__divider-inner {
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--accent-text-color);
+    margin: 0 auto;
+}
+
+.about-us__description-location {
+    color: var(--color-text-subtitles);
+    font-size: 19px;
+    font-weight: 500;
+    padding: 15px 0;
+}
+
+.about-us__description-about {
+    color: var(--color-text-subtitles);
+    font-size: 17px;
+    font-weight: 400;
+    padding: 15px 0;
+}
+
+.about-us__read-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent-text-color);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: color 0.3s;
+}
+
+.about-us__read-more-button:hover {
+     color: darker(var(--color-text-subtitles), 10%);
+}
+
+.about-us__link-container {
+    margin-top: 20px;
+}
+
+@media (max-width: 320px) {
+
+    .about-us__image {
+        max-width: 250px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-us {
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
+    }
+
+    .about-us__content {
+        text-align: left;
+        padding: 0 30;
+    }
+
+    .about-us__image {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-us {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .about-us__image {
+        max-width: 555px;
+    }
+}
