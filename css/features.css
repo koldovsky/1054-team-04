@@ -47,9 +47,41 @@
 
 .features-section__benefits-block {
     margin: 10px;
-    text-align: center;
     padding: 20px;
     box-sizing: border-box;
+}
+
+.features-section__subtitle-block {
+    color: var(--color-text-header);
+    font-size: 22px;
+    font-family: var(--font-text-menu-h);
+    padding: 20px 0;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    text-align: left;
+}
+
+.features-section__description {
+    width: 15%;
+    margin-left: 0;
+}
+
+.features-section__image-line {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-text-color);
+    margin: 10 0px ;
+}
+
+.features-section__text {
+    color: var(--color-text-paragrapf);
+    font-size: 17px;
+    padding: 20px 0;
+    font-weight: 400;
+    text-align: left;
 }
 
 @media (max-width: 320px) {
