@@ -1,41 +1,105 @@
-@import url(global.css);
-.home-news {
-
-}
 .home-news-headline {
-    --orange-text-color: rgb(255, 93, 40);
+    color: var( --accent-text-color);
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 .home-news-header {
-
+    font-family: vollkorn;
+    font-size: 34px;
+    text-align: center;
+    color: var(--color-text-header);
+    font-weight: 400;
+}
+.home-news-header-pattern {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
 }
 .home-news-paragraph {
-
+    font-family: vollkorn;
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--color-text-subtitles);
+    text-align: center;
 }
 .home-news-categories {
+    
+    text-align: left;
+    gap: 5px;
+    padding-top: 30px;
+    max-width: 100%;
+    display: grid;
+    min-width: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
 }
 .home-news-categories-text-on-image {
-
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
+    url(../img/news/glasses.jpg);
+    min-width: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    flex-direction: column;
+    min-height: 500px;
+    width: 300px;
 }
 .home-news-categories-title {
-
+    
+    
+    color: var(--on-image-text-color);
+    font-family: vollkorn;
 }
 .home-news-categories-title-description {
+    
+    color: var(--on-image-text-color);
+    font-family: vollkorn;
 
 }
 .home-news-categories-nav {
-
+    color: var( --accent-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    
 }
 .home-news-categories-subsection {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 300px;
+    min-width: 200px;
+    gap: 5px;
+}
+.home-news-categories-subsection-title {
+    font-family: vollkorn;
+    justify-content: left;
+    color: var(--color-text-header);
 
 }
-.home-news-categories-title {
-
-}
-.home-news-categories-title-description {
-
+.home-news-categories-subsection-description {
+    font-family: vollkorn;
+    justify-content: left;
+    color: var(--color-text-subtitles);
 }
 .home-news-form-button {
-
+    color: var(--on-image-text-color);
+    font-style: 16px;
+    font-weight: 600;
+    background-color: var( --accent-text-color);
+    margin: 50px;
+    padding: 5px;
+    border-color: var( --accent-text-color);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 25px;
+    text-decoration: none;
 }
