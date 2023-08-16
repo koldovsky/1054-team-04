@@ -1,6 +1,6 @@
 .home-news-headline {
     color: var( --accent-text-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-text-menu-p);
     text-align: center;
     padding-top: 100px;
     padding-bottom: 30px;
@@ -9,26 +9,25 @@
     font-weight: 900;
 }
 .home-news-header {
-    font-family: vollkorn;
+    font-family: var(--font-text-menu-h);
     font-size: 34px;
     text-align: center;
     color: var(--color-text-header);
     font-weight: 400;
 }
 .home-news-header-pattern {
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 30px;
     margin: auto;
 }
 .home-news-paragraph {
-    font-family: vollkorn;
+    font-family: var(--font-text-menu-h);
     font-size: 19px;
     font-weight: 500;
     color: var(--color-text-subtitles);
     text-align: center;
 }
 .home-news-categories {
-    
     text-align: left;
     gap: 5px;
     padding-top: 30px;
@@ -36,7 +35,6 @@
     display: grid;
     min-width: 300px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
 }
 .home-news-categories-text-on-image {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
@@ -52,22 +50,17 @@
     width: 300px;
 }
 .home-news-categories-title {
-    
-    
     color: var(--on-image-text-color);
-    font-family: vollkorn;
+    font-family: var(--font-text-menu-h);
 }
 .home-news-categories-title-description {
-    
     color: var(--on-image-text-color);
-    font-family: vollkorn;
-
+    font-family: var(--font-text-menu-h);
 }
 .home-news-categories-nav {
     color: var( --accent-text-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-text-menu-p);
     font-size: small;
-    
 }
 .home-news-categories-subsection {
     padding-top: 30px;
@@ -79,13 +72,12 @@
     gap: 5px;
 }
 .home-news-categories-subsection-title {
-    font-family: vollkorn;
+    font-family: var(--font-text-menu-h);
     justify-content: left;
     color: var(--color-text-header);
-
 }
 .home-news-categories-subsection-description {
-    font-family: vollkorn;
+    font-family: var(--font-text-menu-h);
     justify-content: left;
     color: var(--color-text-subtitles);
 }
