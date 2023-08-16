@@ -25,7 +25,7 @@
     line-height: 40.8px;
     overflow-wrap: break-word;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
 .categories__description {
@@ -50,9 +50,8 @@
 .categories__item {
     display: flex;
     align-items: center; /* Вирівнювання тексту відносно картинки */
-    width: calc(33.33% - 10px); /* Ширина третини контейнера з врахуванням проміжку */
-
 }
+
 .categories__item img {
     width: 120px;
     padding-right: 10px;
