@@ -16,7 +16,7 @@ background: rgba(0, 0, 0, 0.11);
     font-family: vollkorn;
     font-size: 34px;
     text-align: center;
-    color: rgb(75, 86, 106);
+    color: var(--color-text-header);
     font-weight: 400;
 }
 
@@ -28,7 +28,7 @@ margin: auto;
 .offers-title-medium{
     font-size: 19px;
     font-weight: 500;
-    color: rgb(130, 134, 143);
+    color: var(--color-text-subtitles);
     text-align: center;
 }
 
@@ -45,7 +45,7 @@ font-size: 15px;
 font-weight: 700;
 font-style: italic;
 text-align: center;
-color: rgb(130, 134, 143);
+color: var(--color-text-subtitles);
 }
 
 .offers-list-special-offers .title{
@@ -56,7 +56,7 @@ text-align: left;
 }
 
 .offers-list-special-offers .offer-text{
-    color: rgb(155, 158, 164);
+    color: var(--color-text-paragrapf);
     font-size: 17px;
     text-align: justify;
 }
