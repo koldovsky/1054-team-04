@@ -1,6 +1,5 @@
-@import url(global.css);
 .home-news-headline {
-    color: var(--orange-text-color);
+    color: var( --accent-text-color);
     font-family: 'Roboto', sans-serif;
     text-align: center;
     padding-top: 100px;
@@ -65,7 +64,7 @@
 
 }
 .home-news-categories-nav {
-    color: var(--orange-text-color);
+    color: var( --accent-text-color);
     font-family: 'Roboto', sans-serif;
     font-size: small;
     
@@ -94,10 +93,10 @@
     color: var(--on-image-text-color);
     font-style: 16px;
     font-weight: 600;
-    background-color: var(--orange-text-color);
+    background-color: var( --accent-text-color);
     margin: 50px;
     padding: 5px;
-    border-color: var(--orange-text-color);
+    border-color: var( --accent-text-color);
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border-top-left-radius: 7px;

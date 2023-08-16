@@ -1,5 +1,5 @@
 .footer{
-background-color: var(--background-color);
+    background-color: var(--background-color);
 }
 .footer-additional-information{
     display: grid;
@@ -32,4 +32,74 @@ background-color: var(--background-color);
 .footer-main-information-main-logo{
     width: 200px;
     justify-content: left;
+}
+.footer-main-information-comment{
+    color: var(--color-text-subtitles);
+
+}
+.footer-main-information-tabs{
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-text-header);
+    font-family: vollkorn;
+}
+.footer-main-information-social{
+
+}
+.footer-main-information-social-logo{
+    text-align: left;
+    gap: 2px;
+    padding-top: 15px;
+    max-width: 100%;
+    width: 25px;
+    display: grid;
+    min-width: 300px;
+    grid-template-columns: repeat(auto-fit, 50px 250px);
+}
+.footer-navigation{
+    text-align: left;
+    gap: 5px;
+    padding-top: 30px;
+    max-width: 100%;
+    display: grid;
+    min-width: 300px;
+    grid-template-columns: repeat(auto-fit, 50px 250px);
+}
+.footer-navigation-item{
+    font-family: vollkorn;
+    color: var(--color-text-header);
+}
+.footer-navigation-item-line{
+    width: 70%;
+    margin-left: 0;
+}
+.footer-navigation-image{
+    width: 30%; 
+    max-width: 250px; 
+    transition: width 0.5s; 
+}
+.footer-navigation-item-section{
+    font-family: vollkorn;
+    color: var(--color-text-subtitles);
+}
+.footer-address{
+
+}
+.footer-address-icon{
+    width: 40px;
+}
+.footer-address-contact{
+    font-family: vollkorn;
+    color: var(--color-text-subtitles);
+}
+.footer-text-caption-left-side{
+    font-family: vollkorn;
+    color: var(--color-text-subtitles);
+    text-align: left;
+    display: list-item;
+}
+.footer-text-caption-right-side{
+    font-family: vollkorn;
+    color: var(--color-text-subtitles);
+    text-align: right;
+    display: list-item;
 }
