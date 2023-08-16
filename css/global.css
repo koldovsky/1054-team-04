@@ -8,6 +8,10 @@
 }
 
 :root {
+    --box-shadow-new-tastes:rgba(130, 134, 143,  0.25);
+    --ui-brand-color: #ff5d28;
+    --ui-dark-shade-color: #4b566a;
+    --ui-dark-accent-color: #82868f;
     --accent-text-color: rgb(255, 93, 40);
     --color-text-header: rgb(75, 86, 106);
     --color-text-subtitles: rgb(130, 134, 143);
