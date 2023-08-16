@@ -57,10 +57,21 @@
 
 @media screen and (max-width: 768px){
     .new-tastes__block{
+        display: flex;
+        flex-direction: column;
         width: calc(100% - 20px);
+    }
+    .new-tastes__block-image{
+        order: 1;
+    }
+    .new-tastes__dish{
+        order: 10;
     }
     .new-tastes__blocks{
         margin: auto;
+    }
+    .decorator__wrapper{
+        display: flex;
     }
 }
 
@@ -85,7 +96,7 @@
 .decorator__wrapper__or{
     position: relative;
     z-index: 1;
-    order: 2;
+    order: 5;
 }
 
 .picture__one{
