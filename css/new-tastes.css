@@ -53,7 +53,8 @@
 }
 .new-tastes__block-image{
     position: relative;
-    width: 100%;
+    height: 300px;
+    width: 300px;
     flex-shrink: 0;
     text-align: center;
     display: flex;
