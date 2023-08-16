@@ -1,13 +1,9 @@
-:root{
-    text-align: center;
-    --w-title-offset: 62px;
-}
-.newTastes__background{
+.new-tastes__background{
     background-color: #4b566a;
     max-width: 100%;
 }
 
-.newTastes__intro{
+.new-tastes__intro{
     color: #ff5d28;
     padding-top: 95px;
     font-size: 11px;
@@ -17,7 +13,7 @@
     position: relative;
     padding-bottom: calc(var(--w-title-offset) / 2 + 7px);
 }
-.newTastes__title{
+.new-tastes__title{
     font-family: 'Vollkorn', serif;
     font-size: 34px;
     margin: 20px;
@@ -27,31 +23,38 @@
     min-width: 20px;
     max-width: 100%;
 }
-.newTastes__subtitle{
-
-}
 .subtitle__text{
     font-family: 'Roboto', sans-serif;
     color: #82868f;
     font-size: 19px;
+    padding: 45px;
     display: inline-block;
     position: relative;
     min-width: 20px;
     max-width: 100%;
 }
 
-.newTastes__blocks{
-    margin-top: 45px;
-}
-.newTastes__block{
+.new-tastes__blocks{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.new-tastes__block{
+    width: calc(50% - 20px);
+    margin: 10px;
+    text-align: center;
     border-radius: 6px;
     box-shadow: -3px 3px 26px 5px rgba(130, 134, 143,  0.25);
 }
-.newTastes__block-image{
+@media screen and (max-width: 768px){
+    .new-tastes__block{
+        width: calc(100% - 20px);
+    }
+}
+.new-tastes__block-image{
     position: relative;
-    width: 100%;
+    height: 300px;
+    width: 300px;
     flex-shrink: 0;
     text-align: center;
     display: flex;
@@ -72,14 +75,14 @@
     left: 0;
     object-fit: cover;
 }
-.newTastes__dish{
+.new-tastes__dish{
     font-size: 11px;
     line-height: 1.43;
     letter-spacing: calc(0.1 * 1em);
    
 }
-.newTastes__dish-title{
-     color: #82868f;
+.new-tastes__dish-title{
+    color: #82868f;
     font-size: 11px;
     font-weight: bold;
 }
@@ -90,4 +93,7 @@
     top: 0;
     left: 0;
     object-fit: cover;
+}
+.new-tastes__image{
+    margin: 0 auto;
 }
