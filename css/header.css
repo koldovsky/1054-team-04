@@ -2,40 +2,78 @@
     background-color: rgb(247, 246, 242);
 }
 
-.header__menu {
+.header__working-hours-social-media {
+    display: none;
+}
+
+.header__navigation-wrapper {
     display: flex;
     flex-direction: column;
 }
 
-.header__menu .menu__item, .header__menu .menu__social-media-item {
+.header__navigation-pages-link {
+    font-size: 15px;
     text-decoration: none;
     color: var(--color-text-subtitles);
     font-weight: bold;
     padding: 5px;
-} 
+}
 
-@media (min-width: 992px) {
+.header__navigation-social, .header__navigation-working-hours {
+    font-weight: bold;
+    padding: 5px;
+    font-size: 11px;
+    color: rgb(166, 58, 24);
+}
 
-    .header__nav {
-        display: flex;
-        align-items: center;
-    }
-
-    .header__menu {
-        flex: 1;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
+.header__navigation-social-link {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 11px;
+    color: rgb(166, 58, 24);
 }
 
 .header__banner {
-    background-image: url(../images/header-background.png);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../images/header-background.png);
     min-height: 662px;
     background-size: cover;
-    background-position: center;
+    background-position: right;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    padding: 10px;
+}
+
+.header__subtitle {
+    text-align: left;
+    font-size: 11px;
+    color: var(--orange-text-color);
+    font-weight: bold;
+}
+
+.header__link-contacts {
+    background-color: rgb(255, 93, 40);;
+    padding: 14px 30px;
+    text-align: center;
+    border-radius: 10%;
+    text-decoration: none;
+    color: var(--on-image-text-color);
+}
+
+.header__link-to-call {
+    font-size: 17px;
+    text-decoration: none;
+    color: rgb(75, 86, 106);
+    font-weight: bold;
+}
+
+@media (min-width: 992px) {
+    
+    .header__working-hours-social-media{
+        display: block;
+        background-color: rgb(255, 93, 40);
+    }
+    
+    
 }

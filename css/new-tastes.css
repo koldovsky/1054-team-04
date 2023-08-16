@@ -82,6 +82,12 @@
     z-index: 1;
 }
 
+.decorator__wrapper__or{
+    position: relative;
+    z-index: 1;
+    order: 2;
+}
+
 .picture__one{
     border-radius: inherit;
     width: 100%;
