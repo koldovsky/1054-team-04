@@ -10,25 +10,9 @@ function DNAtoRNA(dna) {
   return rna;
 }
 // 3. https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
-var min = function (list) {
-  let min = list[0];
-  for (let i = 1; i < list.length; i++) {
-    if (list[i] < min) {
-      min = list[i];
-    }
-  }
-  return min;
-};
+const min = (list) => Math.min(...list);
 
-var max = function (list) {
-  let max = list[0];
-  for (let i = 1; i < list.length; i++) {
-    if (list[i] > max) {
-      max = list[i];
-    }
-  }
-  return max;
-};
+const max = (list) => Math.max(...list);
 
 // 4. https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 function min(arr, toReturn) {
