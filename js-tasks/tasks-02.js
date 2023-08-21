@@ -47,3 +47,15 @@ function min(arr, toReturn) {
     return index;
   }
 }
+
+// 5. https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
+function warnTheSheep(queue) {
+  let wolfNumber = queue.indexOf("wolf");
+  let sheepNumber = queue.length - wolfNumber - 1;
+
+  if (wolfNumber === queue.length - 1) {
+    return "Pls go away and stop eating my sheep";
+  } else {
+    return `Oi! Sheep number ${sheepNumber}! You are about to be eaten by a wolf!`;
+  }
+}
