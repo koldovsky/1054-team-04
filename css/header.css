@@ -35,7 +35,7 @@
 }
 
 .header__banner {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../images/header-background.png);
+    background-image: url(../images/header-background.png);
     min-height: 662px;
     background-size: cover;
     background-position: right;
@@ -45,11 +45,26 @@
     padding: 10px;
 }
 
+.header__content { 
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title {
+    font-size: 54px;
+    display: block;
+    color: var(--color-text-header);
+    font-family: var(--font-text-menu-h);
+    font-weight: 100;
+}
+
 .header__subtitle {
     text-align: left;
     font-size: 11px;
-    color: var(--orange-text-color);
+    color: var(--accent-text-color);
     font-weight: bold;
+    margin: 10px 10px;
+    padding: 70px 10px 20px 10px;
 }
 
 .header__link-contacts {
@@ -62,18 +77,62 @@
 }
 
 .header__link-to-call {
+    display: flex;
+    flex-direction: row;
     font-size: 17px;
     text-decoration: none;
     color: rgb(75, 86, 106);
     font-weight: bold;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    
 }
 
 @media (min-width: 992px) {
     
-    .header__working-hours-social-media{
-        display: block;
+    .header__working-hours-social-media {
+        display: flex;
+        justify-content: space-between;
         background-color: rgb(255, 93, 40);
     }
-    
-    
+
+    .header__working-hours-container, .header__social-media-top {
+        padding: 25px 0;
+        color: var(--color-text-header-top-line);
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .header__social-media {
+        color: var(--color-text-header-top-line);
+        margin: 0 5px;
+    }
+
+    .header__content {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        grid-gap: 30px;
+    }
+
+    .header__links {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .header__navigation {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px;
+        align-items: center;
+    }
+
+
+    .header__navigation-working-hours, .header__navigation-social {
+        display: none;
+    }
+
+    .header__nav {
+        display: none;
+    }
 }
