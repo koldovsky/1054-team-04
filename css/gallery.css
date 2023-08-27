@@ -17,3 +17,9 @@
     align-items: center;
     gap: 20px;
 }
+.gallery-button-prev {
+    border-radius: 50%;
+}
+.gallery-button-next {
+    border-radius: 50%;
+}
