@@ -1,20 +1,27 @@
-
 .gallery-section {
     background-color: #4b566a;
+    width: 100%;
     display: flex;
-    max-width: 100%;
-    
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .gallery-section-items {
-    max-width: 100%;
-    width: 165px;
-    margin-right: 40px;
-    margin-left: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
     display: flex;
-    justify-content: space-between;
+    gap: 15px;
     align-items: center;
-    gap: 20px;
-    
+    object-fit: cover;
+}
+.gallery-button-prev {
+    border-radius: 50%;
+    width: 20px;
+}
+.gallery-button-next {
+    border-radius: 50%;
+    width: 20px;
 }

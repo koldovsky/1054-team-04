@@ -17,17 +17,24 @@
     width: 70px;
 }
 .footer-additional-information-header{
-    font-family: vollkorn;
+    font-family: var(--font-text-menu-h);
     justify-content: left;
     color: var(--color-text-header);
 }
 .footer-additional-information-title{
-    font-family: vollkorn;
+    font-family: var(--font-text-menu-h);
     justify-content: left;
     color: var(--color-text-subtitles);
 }
 .footer-main-information{
-
+    display: grid;
+    text-align: left;
+    justify-content: center;
+    grid-template-columns: repeat(1, 2fr 1fr 1fr 1fr);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    grid-column-gap: 10px;
+    
 }
 .footer-main-information-main-logo{
     width: 200px;
@@ -35,51 +42,36 @@
 }
 .footer-main-information-comment{
     color: var(--color-text-subtitles);
-
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .footer-main-information-tabs{
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-text-menu-p);
     color: var(--color-text-header);
-    font-family: vollkorn;
+    padding-top: 40px;
 }
 .footer-main-information-social{
-
-}
-.footer-main-information-social-logo{
-    text-align: left;
-    gap: 2px;
-    padding-top: 15px;
-    max-width: 100%;
-    width: 25px;
-    display: grid;
-    min-width: 300px;
-    grid-template-columns: repeat(auto-fit, 50px 250px);
-}
-.footer-navigation{
-    text-align: left;
-    gap: 5px;
-    padding-top: 30px;
-    max-width: 100%;
-    display: grid;
-    min-width: 300px;
-    grid-template-columns: repeat(auto-fit, 50px 250px);
+    gap: 10px;
+    font-family: var(--font-text-menu-h);
+    color: var(--color-text-header);
 }
 .footer-navigation-item{
-    font-family: vollkorn;
+    font-family: var(--font-text-menu-h);
     color: var(--color-text-header);
 }
 .footer-navigation-item-line{
-    width: 70%;
+    width: 100%;
     margin-left: 0;
 }
 .footer-navigation-image{
-    width: 30%; 
+    width: 50%; 
     max-width: 250px; 
     transition: width 0.5s; 
 }
 .footer-navigation-item-section{
-    font-family: vollkorn;
+    font-family: var(--font-text-menu-h);
     color: var(--color-text-subtitles);
+    text-decoration: none;
 }
 .footer-address{
 
@@ -88,17 +80,17 @@
     width: 40px;
 }
 .footer-address-contact{
-    font-family: vollkorn;
+    font-family: var(--font-text-menu-h);
     color: var(--color-text-subtitles);
 }
 .footer-text-caption-left-side{
-    font-family: vollkorn;
+    font-family: var(--font-text-menu-h);
     color: var(--color-text-subtitles);
     text-align: left;
     display: list-item;
 }
 .footer-text-caption-right-side{
-    font-family: vollkorn;
+    font-family: var(--font-text-menu-h);
     color: var(--color-text-subtitles);
     text-align: right;
     display: list-item;
