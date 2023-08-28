@@ -107,6 +107,7 @@
         width: 30px;
         height: 20px;
         z-index: 8;
+        padding: 15px 10px 0 0;
     }
     
     .header__navigation-burger span {
@@ -116,7 +117,8 @@
         height: 2px;
         top: 9px;
         left: 0;
-        transition: all 0.3s ease 0s;
+        transition: all 0.9s ease 0s;
+        
     }
     
     .header__navigation-burger::before,
@@ -127,7 +129,7 @@
         width: 100%;
         height: 2px;
         left: 0;
-        transition: all 0.3s ease 0s;
+        transition: all 0.9s ease 0s;
     }
     
     .header__navigation-burger::before {
@@ -144,12 +146,12 @@
     
     .header__navigation-burger.active::before {
         transform: rotate(45deg);
-        bottom: 9px;
+        top: 9px;
     }
     
     .header__navigation-burger.active::after {
         transform: rotate(-45deg);
-        top: 9px;
+        bottom: 9px;
     }
     
     .header__navigation-logo-container {
@@ -168,7 +170,7 @@
         width: 100%;
         height: 100%;
         z-index: 3;
-        transition: all 0.3s ease 0s;
+        transition: all 1.5s ease 0s;
         background-color: var(--background-color);
     }
     
