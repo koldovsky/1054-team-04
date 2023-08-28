@@ -77,9 +77,6 @@
 .categories__header, .categories__link, .description_item {
     font-weight: 400;
 }
-categories__items {
-    display: flex;
-    justify-content: space-around;
 }
 
 @media (max-width: 768px) {
