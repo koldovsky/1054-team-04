@@ -1,3 +1,56 @@
+.main__menu {
+    display: flex;
+    flex-wrap: wrap; /* Розміщуємо елементи в кілька рядків при необхідності */
+    justify-content: space space-around; /* Розподіляємо простір між елементами */
+    align-items: flex-start; /* Вирівнюємо елементи зверху */
+}
+
+.main__menu-actions {
+    display: flex;
+    justify-content: space-between; /* Розподіляємо простір між дітьми горизонтально */
+    margin-top: 20px; /* Відступ від верхньої частини контейнера */
+}
+
+.main__menu-item-title {
+    font-family: var(--font-text-menu-h);
+    font-size: 24px;
+    color: var(--color-text-header);
+    text-decoration: solid;
+    padding-right: 10px;
+}
+.main__menu-item-price {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    color: var(--accent-text-color);
+    text-align: left;
+    font-weight: bold;
+    font-style: normal;
+    vertical-align: baseline;
+    white-space: pre-wrap;
+    text-transform: none;
+    overflow-wrap: break-word;
+    letter-spacing: normal;
+    line-height: 24.78px;
+    }
+}
+.main__menu-item-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: var(--color-text-paragrapf);
+    text-align: left;
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
 .main__menu-image {
     max-width: 80%; 
     display: block;
