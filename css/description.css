@@ -1,0 +1,66 @@
+.aboutus-description{
+    background-color: var(--on-image-text-color);
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 50px;
+    padding-right: 100px;
+}
+.aboutus-description-photo-block {
+    width: 100%;
+    object-position: 50% 100%;
+}
+.aboutus-description-main-foto{
+    width: 100%;
+    overflow: clip;
+    object-fit: cover;
+    max-height: 800px;
+}
+.aboutus-info-textblock{
+    text-align: left;
+}
+.aboutus-description-header{
+    color: var(--color-text-header);
+    font-family: var(--font-text-menu-h);
+    font-size: 42px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.aboutus-description-pattern{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin: auto;
+    margin: 0;
+}
+.aboutus-description-headline{
+    color: var(--accent-text-color);
+    font-size: 11px;
+    font-weight: 900;
+    padding: 20px 0;
+    font-family: var(--font-text-menu-p);
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.aboutus-description-title{
+    color: var(--color-text-header);
+    font-size: 19px;
+    font-weight: 500;
+    padding: 15px 0;
+}
+.aboutus-description-paragraph{
+    color: var(--color-text-subtitles);
+    font-size: 17px;
+    font-weight: 400;
+    padding: 15px 0;
+}
+.aboutus-description-points{
+    color: var(--color-text-header);
+    font-size: 17px;
+    font-weight: 400;
+    padding: 15px 0;
+}
+.aboutus-description-points-item {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
