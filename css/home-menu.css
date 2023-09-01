@@ -1,15 +1,30 @@
+/* Стилі CSS */
+
 .main__menu {
     display: flex;
-    flex-wrap: wrap; /* Розміщуємо елементи в кілька рядків при необхідності */
-    justify-content: space space-around; /* Розподіляємо простір між елементами */
-    align-items: flex-start; /* Вирівнюємо елементи зверху */
+    flex-direction: column;
+    align-items: center; /* Вирівнювання по центру по горизонталі */
+    text-align: center; /* Вирівнювання тексту по центру */
 }
 
-.main__menu-actions {
+.container_main__menu-item {
     display: flex;
-    justify-content: space-between; /* Розподіляємо простір між дітьми горизонтально */
-    margin-top: 20px; /* Відступ від верхньої частини контейнера */
+    flex-direction: ;
+    text-align: left;
+    align-items: flex-start;
+    
+    }
+
+.main__menu-actions {
+    margin-top: 20px; /* Відступи між елементами та діями меню */
 }
+
+.main__menu-action {
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px; /* Відступи між діями меню */
+}
+
 
 .main__menu-item-title {
     font-family: var(--font-text-menu-h);
@@ -40,14 +55,6 @@
     text-align: left;
     line-height: 20px;
 }
-
-
-
-
-
-
-
-
 
 
 

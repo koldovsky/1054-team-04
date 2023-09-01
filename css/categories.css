@@ -55,6 +55,9 @@
     color: var(--color-text-header);
     text-decoration: solid;
     padding-right: 10px;
+    }
+.text-container {
+    text-align: left;
 }
 .decoration_line {
     color: var(--accent-text-color);
