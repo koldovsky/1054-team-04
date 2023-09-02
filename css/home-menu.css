@@ -1,4 +1,3 @@
-/* Стилі CSS */
 
 .main__menu {
     display: flex;
@@ -6,6 +5,16 @@
     align-items: center; /* Вирівнювання по центру по горизонталі */
     text-align: center; /* Вирівнювання тексту по центру */
 }
+
+.main__menu-item_image {
+    display: flex;
+    max-width: 85%; /* Задаємо ширину контейнера 300 пікселів */
+    max-height: 580px; /* Задаємо висоту контейнера 200 пікселів */
+    border: 1px solid black; /* Додаємо рамку для видимості контейнера */
+    justify-content: space-around;
+    
+}
+
 
 .container_main__menu-item {
     display: flex;
@@ -33,6 +42,9 @@
     text-decoration: solid;
     padding-right: 10px;
 }
+.main__menu-item-separator {
+    border-bottom: 1px solid rgb(199, 198, 196);
+}
 .main__menu-item-price {
     font-family: 'Roboto', sans-serif;
     font-size: 21px;
@@ -59,7 +71,5 @@
 
 
 .main__menu-image {
-    max-width: 80%; 
-    display: block;
-    margin: 0 auto; 
+   
 }
