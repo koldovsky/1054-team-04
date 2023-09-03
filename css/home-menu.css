@@ -2,47 +2,40 @@
 .main__menu {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Вирівнювання по центру по горизонталі */
-    text-align: center; /* Вирівнювання тексту по центру */
+    align-items: center; 
+    text-align: center;
 }
-
 .main__menu-item_image {
     display: flex;
-    max-width: 85%; /* Задаємо ширину контейнера 300 пікселів */
-    max-height: 580px; /* Задаємо висоту контейнера 200 пікселів */
-    border: 1px solid black; /* Додаємо рамку для видимості контейнера */
+    max-width: 85%; 
+    max-height: 580px;
     justify-content: space-around;
-    
 }
-
-
 .container_main__menu-item {
     display: flex;
-    flex-direction: ;
-    text-align: left;
-    align-items: flex-start;
-    
+    flex-direction:;
+    padding: 30px;
     }
-
-.main__menu-actions {
-    margin-top: 20px; /* Відступи між елементами та діями меню */
+    .main__menu-item_bloc {
+        padding: 15px;
+    }
+.main__menu-item-title-row {
+    flex-direction: row;
 }
-
-.main__menu-action {
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 20px; /* Відступи між діями меню */
+.main__menu-item-title-row {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-top: 15px;
 }
-
-
 .main__menu-item-title {
     font-family: var(--font-text-menu-h);
     font-size: 24px;
     color: var(--color-text-header);
     text-decoration: solid;
-    padding-right: 10px;
 }
 .main__menu-item-separator {
+    flex: 1;
     border-bottom: 1px solid rgb(199, 198, 196);
 }
 .main__menu-item-price {
@@ -59,17 +52,62 @@
     letter-spacing: normal;
     line-height: 24.78px;
     }
-}
 .main__menu-item-description {
+    flex-wrap: wrap;
+    text-align: left;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     color: var(--color-text-paragrapf);
     text-align: left;
     line-height: 20px;
+    padding-top: 10px;
 }
-
-
-
-.main__menu-image {
-   
+.main__menu-actions {
+    margin-top: 30px; 
+    margin-bottom: 105px;
+}
+.main__menu-action_open {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent-text-color);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    height: 46.08px;
+    width: 164px;
+    text-decoration: none;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 25px;
+    transition: color 0.3s;
+    margin-left: 30px;
+}
+.main__menu-action_pdf {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--on-image-text-color);
+    color: var(--accent-text-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    height: 46.08px;
+    width: 164px;
+    text-decoration: none;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 25px;
+    transition: color 0.3s;
+    cursor: pointer;
+    border: 2px solid var(--accent-text-color);
+}
+.main__menu-action_pdf:hover {
+    background-color: var(--accent-text-color); /* Оранжевий фон при наведенні */
+    color: var(--on-image-text-color); /* Білий колір тексту при наведенні */
+}
+.main__menu-action_open:hover {
+    background-color: orangered; /* Оранжевий фон при наведенні */
+    color: var(--on-image-text-color); /* Білий колір тексту при наведенні */
 }

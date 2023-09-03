@@ -1,7 +1,8 @@
 /* Fatyliak Andrii*/
 .categories {
     padding-top: 95px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+    padding: 95px 85px 50px 82px;
 }
 .categories__text, .booking_text {
     font-family: 'Roboto', sans-serif;
@@ -44,6 +45,7 @@
 .categories__item {
     display: flex;
     align-items: center;
+    padding-left: 30px;
 }
 .categories__item img {
     width: 120px;
@@ -55,6 +57,9 @@
     color: var(--color-text-header);
     text-decoration: solid;
     padding-right: 10px;
+    }
+.categories__link:hover {
+    color: var(--accent-text-color);
     }
 .text-container {
     text-align: left;
