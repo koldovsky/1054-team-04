@@ -1,7 +1,6 @@
 /* Fatyliak Andrii*/
 .categories {
-    padding-top: 95px;
-    padding-bottom: 50px;
+    
     padding: 95px 85px 50px 82px;
 }
 .categories__text, .booking_text {
@@ -93,4 +92,9 @@
     .categories__item {
         margin-bottom: 20px; 
     }
+    .categories {
+    
+        padding: 50px 30px 0px 0px;
+    }
+
     }

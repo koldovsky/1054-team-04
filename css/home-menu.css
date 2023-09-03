@@ -16,15 +16,14 @@
     flex-direction:;
     padding: 30px;
     }
-    .main__menu-item_bloc {
+.main__menu-item_bloc {
         padding: 15px;
     }
 .main__menu-item-title-row {
-    flex-direction: row;
-}
-.main__menu-item-title-row {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     text-align: left;
     padding-top: 15px;
 }
@@ -82,7 +81,8 @@
     border-top-left-radius: 7px;
     border-top-right-radius: 25px;
     transition: color 0.3s;
-    margin-left: 30px;
+    margin: 0px 15px 0px 15px;
+    border: 2px solid var(--accent-text-color);
 }
 .main__menu-action_pdf {
     display: inline-block;
@@ -102,6 +102,7 @@
     transition: color 0.3s;
     cursor: pointer;
     border: 2px solid var(--accent-text-color);
+    margin: 0px 15px 0px 15px;
 }
 .main__menu-action_pdf:hover {
     background-color: var(--accent-text-color); /* Оранжевий фон при наведенні */
@@ -110,4 +111,32 @@
 .main__menu-action_open:hover {
     background-color: orangered; /* Оранжевий фон при наведенні */
     color: var(--on-image-text-color); /* Білий колір тексту при наведенні */
+}
+
+@media (max-width: 768px) {
+    .container_main__menu-item {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    .main__menu-actions {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .main__menu-action_pdf {
+        margin-bottom: 20px;
+}
+    .main__menu-action_pdf, .main__menu-action_open {
+        cursor: pointer;
+    }
+    .main__menu-item-title {
+        font-size: 21px;
+    }
+    .main__menu-item-price {
+        font-size: 18px;
+        }
+    .main__menu-item-description {
+        font-size: 14px;
+  }
 }

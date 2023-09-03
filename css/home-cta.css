@@ -62,9 +62,10 @@
   }
   .booking_button:hover {
     background-color: orangered; /* Оранжевий фон при наведенні */
-    color: var(--on-image-text-color); /* Білий колір тексту при наведенні *
+    color: var(--on-image-text-color); /* Білий колір тексту при наведенні */
   }
-      @media screen and (max-width: 768px) {
+      
+  @media (max-width: 768px) {
     .booking_content {
       padding-left: 10px;
       padding-right: 10px;
@@ -80,4 +81,4 @@
     .booking_description {
       font-size: 14px;
       }
-
+    }
