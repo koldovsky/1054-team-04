@@ -3,7 +3,7 @@
     
     padding: 95px 85px 50px 82px;
 }
-.categories__text, .booking_text {
+.categories__text {
     font-family: 'Roboto', sans-serif;
     font-size: 11px;
     color: var(--accent-text-color);

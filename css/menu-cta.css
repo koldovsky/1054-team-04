@@ -1,15 +1,16 @@
 /* Fatyliak Andrii*/
-.booking_content {
-    align-items: center;
+.booking__content {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: space-around;
     padding-left: 20px; 
     padding-right: 20px; 
     padding-top: 40px; 
-    padding-bottom: 40px; 
+    padding-bottom: 40px;
+    margin-left: 50px;
   }
-.booking_text {
+.booking__text {
     font-family: 'Roboto', sans-serif;
     font-size: 11px;
     color: var(--accent-text-color);
@@ -21,8 +22,8 @@
     letter-spacing: 1.1px;
     line-height: 15.73px;
   }
-.home_booking {
-    background-image: url('../img/menu/bg_menu.jpg');
+.booking {
+    background-image: url('../img/menu/cta-menu.jpg');
     background-size: cover;
     background-position: center center;
     min-height: 600px;
@@ -30,9 +31,9 @@
     padding-top: 70px;
     padding-bottom: 100px;
   }
-.booking_header {
+.booking__header {
     font-family: var(--font-text-menu-h);
-    font-size: 57px; 
+    font-size: 38px; 
     font-style: normal;
     font-weight: 400;
     color: var(--on-image-text-color);
@@ -44,7 +45,7 @@
     padding-top: 30px; 
     padding-bottom: 15px; 
   }
-.booking_description {
+.booking__description {
     color: rgba(255, 255, 255, 0.81);
     font-family: 'Roboto', sans-serif;
     font-size: 19px; 
@@ -55,7 +56,7 @@
     padding-top: 30px; 
     padding-bottom: 50px; 
   }
-.booking_button {
+.booking__button {
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--accent-text-color);
@@ -71,26 +72,31 @@
     border-top-left-radius: 7px;
     border-top-right-radius: 25px;
     transition: color 0.3s;
+    border: 2px solid var(--accent-text-color);
+    cursor: pointer;
   }
-.booking_button:hover {
+.booking__button:hover {
     background-color: orangered; /* Оранжевий фон при наведенні */
     color: var(--on-image-text-color); /* Білий колір тексту при наведенні */
+    cursor: pointer;
   }
   
   @media (max-width: 768px) {
-    .booking_content {
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-top: 10px;
-      padding-bottom: 20px;
+    .booking__content {
+        text-align: left;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 0px;
+        flex-wrap: wrap;
     }
-    .booking_header {
-      font-size: 30px; 
-      line-height: 34px; 
-      padding-top: 10px; 
-      padding-bottom: 5px;
+    .booking__text {
+        font-size: 11px; 
     }
-    .booking_description {
-      font-size: 14px;
+    .booking__header {
+        font-size: 
+    }
+    .booking__description {
+        font-size: 16px; 
     }
   }
+    
