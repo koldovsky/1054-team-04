@@ -2,14 +2,12 @@
     background-color: var(--on-image-text-color);
     background-size: cover;
     background-position: center;
-    display: grid;
-    gap: 20px;
-    align-items: center;
     padding: auto;
 }
 
 .about-us__image-container {
     padding: 0 40px;
+    max-width: 700px;
 }
 
 .about-us__content {
@@ -89,33 +87,75 @@
 .about-us__link-container {
     margin-top: 20px;
     margin-bottom: 50px;
-    padding: 0 15px;
+    padding: 0 15px 50px 15px;
 }
 
 @media (min-width: 768px) {
     .about-us {
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
         align-items: flex-start;
         background-image: url(../img/about-us/background-aboutus-home.png);
     }
 
     .about-us__content {
+        flex: 1;
         text-align: left;
-        padding: 0 50px;
+        padding: 0 20px;
+    }
+
+    .about-us__subtitle {
+        color: var(--color-text-header);
+        font-family: var(--font-text-menu-h);
+        font-size: 38px;
+        font-weight: 400;
+        padding: 10px 20px;
+        text-align: left;
+    }
+
+    .about-us__description-about__first-paragraph {
+        color: var(--color-text-paragrapf);
+        font-size: 17px;
+        font-weight: 400;
+        padding: 15px 15px;
+        line-height: 1.5;
     }
 
     .about-us__image-container {
-        padding: 0 70px;
+        min-width: 325px;
+        flex: 1;
     }
 }
 
 @media (min-width: 992px) {
     .about-us {
-        grid-template-columns: 1fr 2fr;
+        display: flex;
+        flex-direction: row;
         background-image: url(../img/about-us/background-aboutus-home.png);
+        justify-content: center;
+        align-items: flex-start;
     }
 
     .about-us__image-container {
-        padding: 0 20px;
+        padding:0 65px;
+        flex: 1;
+        max-width: 550px;
+        margin-left: 200px;
+    }
+
+    .about-us__subtitle {
+        color: var(--color-text-header);
+        font-family: var(--font-text-menu-h);
+        font-size: 42px;
+        font-weight: 400;
+        padding: 10px 20px;
+        text-align: left;
+    }
+
+    .about-us__content {
+        flex: 1;
+        text-align: left;
+        padding: 0 30px;
+        margin-right: 150px;
     }
 }

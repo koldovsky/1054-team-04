@@ -27,6 +27,7 @@
     font-size: 19px;
     padding-bottom: 20px;
     font-weight: 500;
+    line-height: 1.5;
 }
 
 .features-section__benefits-block {
@@ -82,6 +83,7 @@
     padding: 20px 0;
     font-weight: 400;
     text-align: left;
+    line-height: 1.5;
 }
 
 @media (max-width: 320px) {
