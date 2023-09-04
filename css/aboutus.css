@@ -19,18 +19,18 @@
 
 .about-us__title {
     color: var(--accent-text-color);
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 900;
-    padding: 10px 0;
+    padding: 10px 15px;
     text-align: left;
 }
 
 .about-us__subtitle {
     color: var(--color-text-header);
     font-family: var(--font-text-menu-h);
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 400;
-    padding: 10px 0;
+    padding: 10px 15px;
     text-align: left;
 }
 
@@ -42,27 +42,45 @@
     margin: 0 auto;
 }
 
-.about-us__description-location,
-.about-us__description-about {
+.about-us__description-location {
     color: var(--color-text-subtitles);
+    font-size: 19px;
+    font-weight: 500;
+    padding: 0 15px;
+    line-height: 1.5;
+}
+
+.about-us__description-about__first-paragraph {
+    color: var(--color-text-paragrapf);
     font-size: 17px;
     font-weight: 400;
-    padding: 10px 0;
+    padding: 0 15px;
+    line-height: 1.5;
+}
 
+.about-us__description-about__second-paragraph {
+    color: var(--color-text-paragrapf);
+    font-size: 17px;
+    font-weight: 400;
+    padding: 15px 15px;
+    line-height: 1.5;
 }
 
 .about-us__read-more-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 40px;
     background-color: var(--accent-text-color);
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     text-decoration: none;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     transition: color 0.3s;
 }
+
 
 .about-us__read-more-button:hover {
      color: darker(var(--color-text-subtitles), 10%);
@@ -70,6 +88,8 @@
 
 .about-us__link-container {
     margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0 15px;
 }
 
 @media (min-width: 768px) {
