@@ -1,61 +1,54 @@
 .about-us {
     background-color: var(--on-image-text-color);
-    background-image: url(../img/about-us/background-aboutus-home.png);
     background-size: cover;
     background-position: center;
     display: grid;
     gap: 20px;
     align-items: center;
+    padding: auto;
 }
 
 .about-us__image-container {
-    padding: 0 30px;
-}
-
-.about-us__image {
-   max-width: 100%;
+    padding: 0 40px;
 }
 
 .about-us__content {
     text-align: left;
-    padding: 0 50px;
+    padding: 0 15px;
 }
 
 .about-us__title {
     color: var(--accent-text-color);
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 900;
-    padding: 20px 0;
+    padding: 10px 0;
+    text-align: left;
 }
 
 .about-us__subtitle {
     color: var(--color-text-header);
     font-family: var(--font-text-menu-h);
-    font-size: 42px;
+    font-size: 36px;
     font-weight: 400;
-    padding-bottom: 20px;
+    padding: 10px 0;
+    text-align: left;
 }
 
 .about-us__divider-inner {
     display: block;
-    width: 50px;
+    width: 30px;
     height: 3px;
     background-color: var(--accent-text-color);
     margin: 0 auto;
 }
 
-.about-us__description-location {
-    color: var(--color-text-subtitles);
-    font-size: 19px;
-    font-weight: 500;
-    padding: 15px 0;
-}
-
+.about-us__description-location,
 .about-us__description-about {
     color: var(--color-text-subtitles);
     font-size: 17px;
     font-weight: 400;
-    padding: 15px 0;
+    padding: 10px 0;
+
 }
 
 .about-us__read-more-button {
@@ -63,7 +56,7 @@
     padding: 10px 20px;
     background-color: var(--accent-text-color);
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     border-bottom-left-radius: 10px;
@@ -79,35 +72,30 @@
     margin-top: 20px;
 }
 
-@media (max-width: 320px) {
-
-    .about-us__image {
-        max-width: 250px;
-    }
-}
-
 @media (min-width: 768px) {
     .about-us {
         grid-template-columns: 1fr 1fr;
         align-items: flex-start;
+        background-image: url(../img/about-us/background-aboutus-home.png);
     }
 
     .about-us__content {
         text-align: left;
-        padding: 0 30;
+        padding: 0 50px;
     }
 
-    .about-us__image {
-        max-width: 100%;
+    .about-us__image-container {
+        padding: 0 70px;
     }
 }
 
 @media (min-width: 992px) {
     .about-us {
         grid-template-columns: 1fr 2fr;
+        background-image: url(../img/about-us/background-aboutus-home.png);
     }
 
-    .about-us__image {
-        max-width: 555px;
+    .about-us__image-container {
+        padding: 0 20px;
     }
 }
