@@ -1,0 +1,215 @@
+.reservation_container {
+   display: flex;
+   background-color: var(--background-color);
+
+
+}
+.reservation_content {
+   flex: 1;
+   margin: 100px 40px 60px 60px;
+   padding: 0px 40px 0px 25px;
+   /*border: 2px solid rgb(248, 52, 26);*/
+
+   
+
+}
+.reservation_form {
+   flex: 1;
+   text-align: center;
+   align-items: center;
+   margin: 100px 60px 60px 0px;
+   /*border: 2px solid rgb(248, 52, 26);*/
+   background-color: var(--on-image-text-color);
+   box-shadow: 0px 0px 6px 2px rgb(175 168 168 / 83%);
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+}
+
+.reservation_detail {
+display: flex;
+margin: 40px 0px 0px 0px;
+}
+
+
+
+
+
+.reservation_heading {
+   font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    color: var(--accent-text-color);
+    font-weight: 900;
+    font-style: normal;
+    text-align: left;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    letter-spacing: 1.1px;
+    line-height: 15.73px;
+}
+.reservation_title {
+   font-family: var(--font-text-menu-h);
+   font-size: 42px;
+   color: var(--color-text-header);
+   text-align: left;
+   line-height: 40.8px;
+   overflow-wrap: break-word;
+   padding-top: 30px;
+   padding-bottom: 50px;
+}
+.reservation_description {
+   color: var(--color-text-subtitles);
+   font-family: 'Roboto', sans-serif;
+   font-size: 19px;
+   font-weight: 500;
+   text-align: left;
+   overflow-wrap: break-word;
+   line-height: 26.6px;
+   }
+   .reservation_description_text {
+      font-family: 'Roboto', sans-serif;
+      font-size: 17px;
+      color: var(--color-text-paragrapf);
+      text-align: left;
+      font-weight: 400;
+      line-height: 24.5px;
+      margin: 30px 0px 30px 0px;
+  }
+
+  .header_reservation_details {
+   font-family: var(--font-text-menu-h);
+   font-size: 24px;
+   color: var(--color-text-header);
+   text-align: left;
+   font-weight: 500;
+   line-height: 28.5px;
+   font-style: normal;
+   }
+   .reservation_details_text {
+      font-family: 'Roboto', sans-serif;
+      font-size: 17px;
+      color: var(--color-text-paragrapf);
+      text-align: left;
+      font-weight: 400;
+      line-height: 24.5px;
+   }
+   
+   .reservation_form_title {
+      font-family: var(--font-text-menu-h);
+      font-size: 42px;
+      color: var(--color-text-header);
+      line-height: 40.8px;
+      overflow-wrap: break-word;
+      padding-top: 30px;
+      padding-bottom: 15px;
+   }
+
+   .reservation_input, /* Стилі для полів вводу */
+.reservation__input select { /* Стилі для вибірки ресторану та кількості осіб */
+    display: block; /* Зробить елементи блоковими, щоб центрувати їх по горизонталі */
+    margin: 0 auto; /* Центрує елементи по горизонталі */
+}
+
+
+   /* Стилі для полів вводу */
+.reservation_input input[type="text"],
+.reservation_input input[type="tel"],
+.reservation_input input[type="email"],
+.reservation_input input[type="datetime"],
+.reservation_input select {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #f1ecec;
+    border-radius: 5px 20px 20px 20px;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    
+}
+
+
+.reservation_input input:focus,
+.reservation_input select:focus {
+    border-color: rgba(36, 39, 243, 0.767);
+    outline: none;
+}
+
+.reservation_input input::placeholder,
+.reservation_input select::placeholder {
+    color: #161212e5;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: var(--color-text-paragrapf);
+    text-align: left;
+    font-weight: 400;
+
+
+}
+
+.reservation_input select {
+    appearance: none; 
+    background: url('path-to-custom-arrow-icon.png') no-repeat right center; 
+    padding-right: 30px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: var(--color-text-paragrapf);
+    text-align: left;
+    font-weight: 400;
+}
+
+.reservation_submit {
+   display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--accent-text-color);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    height: 46.08px;
+    width: 70%;
+    text-decoration: none;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 25px;
+    transition: color 0.3s;
+    margin: 40px 15px 0px 15px;
+    border: 2px solid var(--accent-text-color);
+}
+.reservation_submit:hover {
+   background-color: orangered; /* Оранжевий фон при наведенні */
+   color: var(--on-image-text-color); /* Білий колір тексту при наведенні */
+}
+
+
+
+@media (max-width: 768px) {
+   .reservation_container {
+     flex-direction: column;
+   }
+
+
+   .reservation_content {
+      margin: 40px 20px 20px 10px;
+      padding: 20px;
+      /*border: 2px solid rgb(248, 52, 26);*/
+   
+   }
+   .reservation_form {
+      text-align: center;
+      align-items: center;
+      margin: 40px 20px 20px 10px;
+      padding: 15px;
+   }
+   .reservation_submit {
+      margin: 10px 15px 0px 15px;
+   }
+ 
+}
+
+ 
