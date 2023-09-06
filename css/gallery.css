@@ -25,3 +25,7 @@
     border-radius: 50%;
     width: 20px;
 }
+.gallery-images {
+    height: auto;
+    width: 200px;
+}

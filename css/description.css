@@ -1,11 +1,12 @@
 .aboutus-description{
+    margin-top: 50px;
     background-color: var(--on-image-text-color);
     display: grid;
     grid-template-columns: 55% 45%;
     gap: 50px;
     padding-right: 100px;
 }
-.aboutus-description-photo-block {
+.aboutus-description-photo-block{
     width: 100%;
     object-position: 50% 100%;
 }
@@ -36,8 +37,7 @@
     font-size: 11px;
     font-weight: 900;
     padding: 20px 0;
-    font-family: var(--font-text-menu-p);
-    padding-top: 100px;
+    padding-top: 10%;
     padding-bottom: 30px;
 }
 .aboutus-description-title{
@@ -63,4 +63,24 @@
     justify-content: left;
     align-items: center;
     gap: 10px;
+}
+@media (max-width: 768px){
+    .aboutus-description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin-left: 5%;
+        gap: 0px;
+    }
+    .aboutus-info-textblock{
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .aboutus-description-headline{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }

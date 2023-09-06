@@ -1,12 +1,12 @@
 const items = [
-    '<div><img src="img/gallery/beef.jpg" alt="Beef"></div>',
-    '<div><img src="img/gallery/cooking-process.jpg" alt="cooking process"></div>',
-    '<div><img src="img/gallery/dessert.jpg" alt="dessert"></div>',
-    '<div><img src="img/gallery/cooking-time.jpg" alt="cooking time"></div>',
-    '<div><img src="img/gallery/friendly-lunch.jpg" alt="friendly lunch"></div>',
-    '<div><img src="img/gallery/fruit-salad.jpg" alt="fruit salad"></div>',
-    '<div><img src="img/gallery/serving.jpg" alt="serving"></div>',
-    '<div><img src="img/gallery/soup.jpg" alt="soup"></div>',
+    '<div><img class="gallery-images" src="img/gallery/beef.jpg" alt="Beef"></div>',
+    '<div><img class="gallery-images" src="img/gallery/cooking-process.jpg" alt="cooking process"></div>',
+    '<div><img class="gallery-images" src="img/gallery/dessert.jpg" alt="dessert"></div>',
+    '<div><img class="gallery-images" src="img/gallery/cooking-time.jpg" alt="cooking time"></div>',
+    '<div><img class="gallery-images" src="img/gallery/friendly-lunch.jpg" alt="friendly lunch"></div>',
+    '<div><img class="gallery-images" src="img/gallery/fruit-salad.jpg" alt="fruit salad"></div>',
+    '<div><img class="gallery-images" src="img/gallery/serving.jpg" alt="serving"></div>',
+    '<div><img class="gallery-images" src="img/gallery/soup.jpg" alt="soup"></div>',
 ]
 
 let currentItem = 0;
