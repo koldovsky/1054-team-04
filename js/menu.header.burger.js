@@ -9,6 +9,7 @@ burgerNavigation.addEventListener("click", (e) => {
   burgerNavigation.classList.toggle("active");
   menuItems.classList.toggle("burger");
   socialMedia.classList.toggle("burger-menu");
+  iconBurger.classList.toggle("active");
 });
 
 window.addEventListener('resize', function() {
