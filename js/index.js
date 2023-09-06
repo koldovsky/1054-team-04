@@ -3,4 +3,5 @@ document.addEventListener ('partialsLoaded', () => {
     import('./header-home.js');
     import("./menu.header.burger.js");
     import("./features.partial.js")
+    import('./modal-bg-form.js');
 });
