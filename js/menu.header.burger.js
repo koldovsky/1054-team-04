@@ -13,9 +13,19 @@ burgerNavigation.addEventListener("click", (e) => {
 });
 
 window.addEventListener('resize', function() {
-  if (window.innerWidth >= 992) {
+  if (window.innerWidth >= 992 && menuContainer.classList.contains("burger-menu")) {
+    menuContainer.classList.remove("burger-menu");
     burgerNavigation.classList.remove("active");
-    socialMedia.classList.remove("burger-menu") 
-  } else burgerNavigation.classList.add("active");
-  socialMedia.classList.remove("burger-menu"); 
+    socialMedia.classList.remove("burger-menu");
+    menuItems.classList.remove("burger");
+    //iconBurger.classList.remove("active");
+  }
+  if (window.innerWidth < 992 && iconBurger.classList.contains("active")) {
+    menuContainer.classList.add("burger-menu");
+    burgerNavigation.classList.add("active");
+    socialMedia.classList.add("burger-menu");
+    menuItems.classList.add("burger");
+    iconBurger.classList.add("active");
+  }
+
 });
