@@ -1,0 +1,115 @@
+.menu-desserts{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    padding-bottom: 70px;
+}
+.menu-desserts-header{
+    display: grid;
+    grid-template-columns: 52% 48%;
+    align-items: center; 
+    text-align: left;
+    gap: 5px;
+}
+.desserts-headline{
+    color: var(--accent-text-color);
+    font-size: 11px;
+    font-weight: 900;
+    padding: 20px 0;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.desserts-header{
+    color: var(--color-text-header);
+    font-family: var(--font-text-menu-h);
+    font-size: 42px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.desserts-paragraph{
+    font-family: var(--font-text-menu-h);
+    color: var(--color-text-subtitles);
+    font-size: 17px;
+    font-weight: 400;
+    padding: 15px 0;
+    font-style: italic;
+}
+.desserts-header-pattern{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin: auto;
+    margin: 0;
+}
+.menu__desserts__items-container{
+    display: flex;
+    flex-direction: row;
+}
+.menu__desserts__item{
+    padding: 15px;
+}
+.dessert-item-title-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+    padding-top: 15px;
+    vertical-align: middle;
+    align-items: center;
+}
+.dessert-item-separator{
+    flex: 1;
+    margin-top: 25px;
+    vertical-align: bottom;
+    border-bottom: 1px solid rgb(199, 198, 196);
+}
+.menu__desserts__item-title{
+    color: var(--color-text-header);
+    font-family: var(--font-text-menu-h);
+    font-size: 27px;
+    font-weight: 400;
+    padding: 15px 0;
+}
+.menu__desserts__item-price{
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    color: var(--accent-text-color);
+    text-align: left;
+    font-weight: bold;
+    font-style: normal;
+    white-space: pre-wrap;
+    text-transform: none;
+    overflow-wrap: break-word;
+    letter-spacing: normal;
+    line-height: 24.78px;
+}
+.menu__desserts__item-description{
+    flex-wrap: wrap;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: var(--color-text-paragrapf);
+    text-align: left;
+    line-height: 20px;
+    padding-top: 10px;
+}
+@media (max-width: 480px){
+    .menu-desserts-header{
+        display: block;
+    }
+    .menu__desserts__items-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    .menu__desserts__item-title{
+        font-size: 21px;
+    }
+    .menu__desserts__item-price{
+        font-size: 18px;
+        }
+    .menu__desserts__item-description{
+        font-size: 14px;
+  }
+}
