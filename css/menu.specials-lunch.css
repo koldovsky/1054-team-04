@@ -119,8 +119,12 @@
     gap: 50px;
   }
 
-  .menu__lunch__items-container, .menu__specials__items-container {
+  .menu__lunch__items-container {
     gap: 20px;
+  }
+
+  .menu__specials__items-container {
+    gap: 40px;
   }
 
   .menu__specials__item, .menu__lunch__items-container-third {
