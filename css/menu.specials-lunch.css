@@ -59,7 +59,7 @@
   display: flex;
   flex-direction: column;
   padding: 0 20px;
-  gap: 30px;
+  gap: 40px;
 }
 
 .menu__specials__item-container, .menu__lunch__item-container {
@@ -102,12 +102,24 @@
     justify-content: space-between;
   }
 
+  .menu__specials__item-title {
+    font-size: 24px;
+  }
+
+  .menu__specials__header__title__main {
+    font-size: 42px;
+  }
+
+  .menu__specials__item-price {
+    font-size: 22px;
+  }
+
   .menu__specials__items-container-couple, .menu__lunch__items-container {
     flex-direction: row;
     gap: 50px;
   }
 
-  .menu__lunch__items-container {
+  .menu__lunch__items-container, .menu__specials__items-container {
     gap: 20px;
   }
 

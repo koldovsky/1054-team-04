@@ -4,12 +4,14 @@ const menuContainer = document.querySelector(".menu__header__nav__social__contai
 const burgerNavigation = document.querySelector(".menu__header__nav");
 const menuItems = document.querySelector(".menu__header__menu-items");
 const socialMedia = document.querySelector(".menu__header__working-hours-social-media");
+const body = document.querySelector("body");
 burgerNavigation.addEventListener("click", (e) => {
   menuContainer.classList.toggle("burger-menu");
   burgerNavigation.classList.toggle("active");
   menuItems.classList.toggle("burger");
   socialMedia.classList.toggle("burger-menu");
   iconBurger.classList.toggle("active");
+  body.classList.toggle("lock");
 });
 
 window.addEventListener('resize', function() {
@@ -18,7 +20,7 @@ window.addEventListener('resize', function() {
     burgerNavigation.classList.remove("active");
     socialMedia.classList.remove("burger-menu");
     menuItems.classList.remove("burger");
-    //iconBurger.classList.remove("active");
+    body.classList.remove("lock");
   }
   if (window.innerWidth < 992 && iconBurger.classList.contains("active")) {
     menuContainer.classList.add("burger-menu");
@@ -26,6 +28,7 @@ window.addEventListener('resize', function() {
     socialMedia.classList.add("burger-menu");
     menuItems.classList.add("burger");
     iconBurger.classList.add("active");
+    body.classList.add("lock");
   }
 
 });

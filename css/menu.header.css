@@ -184,3 +184,7 @@
   opacity: 1; 
   transition: opacity 0.3s; 
 }
+
+body.lock {
+  overflow: hidden;
+}
