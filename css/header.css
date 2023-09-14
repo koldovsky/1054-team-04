@@ -2,6 +2,10 @@
     background-color: var(--background-color);
 }
 
+.header__navigation-logo-container {
+    padding: 10px 0 10px 15px;
+}
+
 .header__working-hours-social-media {
     display: none;
 }
@@ -14,11 +18,13 @@
 .header__navigation {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .header__navigation-pages {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 .header__navigation-pages-link {
@@ -34,9 +40,11 @@
     padding: 5px;
     font-size: 11px;
     color: rgb(166, 58, 24);
+    gap: 20px;
 }
 
 .header__navigation-social-link {
+    gap: 15px;
     text-decoration: none;
     font-weight: bold;
     padding: 5px;
@@ -48,7 +56,7 @@
     background-image: url(../images/header-background.png);
     min-height: 662px;
     background-size: cover;
-    background-position: right;
+    background-position: center;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -58,8 +66,10 @@
 .header__content { 
     display: flex;
     flex-direction: column;
-    grid-gap: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: center;
+    
 }
 
 .header__title {
@@ -68,6 +78,7 @@
     color: var(--color-text-header);
     font-family: var(--font-text-menu-h);
     font-weight: 100;
+    text-shadow: 0.5px 0.5px;
 }
 
 .header__subtitle {
@@ -79,12 +90,24 @@
 }
 
 .header__link-contacts {
-    background-color: rgb(255, 93, 40);;
-    padding: 14px 30px;
+    background-color: var(--accent-text-color);
+    margin-top: 10px;
+    padding: 10px 5px;
     text-align: center;
     border-radius: 10%;
     text-decoration: none;
     color: var(--on-image-text-color);
+    max-width: 110px;
+    max-height: 40px;
+    font-family: var(--font-text-menu-h);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 25px;
+}
+
+.header__link-contacts:hover{
+    color: var(--ui-dark-shade-color);
 }
 
 .header__link-to-call {
@@ -96,7 +119,17 @@
     font-weight: bold;
     margin: 10px 10px;
     padding: 10px 10px;
-    
+}
+
+.header__link-to-call:hover{
+    color: var(--accent-text-color);
+}
+
+.header__description {
+    font-size: 17px;
+    color: var(--ui-dark-shade-color);
+    font-weight: 700;
+    font-family: var(--font-text-menu-h);
 }
 
 @media (max-width: 992px) {
@@ -108,15 +141,16 @@
         height: 20px;
         z-index: 8;
         padding: 15px 10px 0 0;
+        margin-top: 20px;
     }
     
     .header__navigation-burger span {
         background-color: var(--color-text-subtitles);
         position: absolute;
         width: 100%;
-        height: 2px;
-        top: 9px;
-        left: 0;
+        height: 2.5px;
+        top: 17px;
+        right: 10px;
         transition: all 0.9s ease 0s;
         
     }
@@ -127,17 +161,19 @@
         background-color: var(--color-text-subtitles);
         position: absolute;
         width: 100%;
-        height: 2px;
-        left: 0;
+        height: 2.5px;
+        right: 10px;
         transition: all 0.9s ease 0s;
     }
     
     .header__navigation-burger::before {
-        top: 0;
+        top: 10px;
     }
     
     .header__navigation-burger::after {
-        bottom: 0;
+        bottom: 0px;
+        top: 24px;
+        right: 10px;
     }
     
     .header__navigation-burger.active span {
@@ -146,12 +182,12 @@
     
     .header__navigation-burger.active::before {
         transform: rotate(45deg);
-        top: 9px;
+        top: 23px;
     }
     
     .header__navigation-burger.active::after {
         transform: rotate(-45deg);
-        bottom: 9px;
+        bottom: 20px;
     }
     
     .header__navigation-logo-container {
@@ -162,8 +198,7 @@
         z-index: 6;
     }
     
-    .menubox {
-        display: block;
+    .menubox {  
         position: fixed;
         top: -100%;
         left: 0;
@@ -175,9 +210,12 @@
     }
     
     .menubox.active {
-        top: 0;
+        top: 0%;
+        margin-top: 30px;
     }
+
 }
+
 
 @media (min-width: 992px) {
     .header__navigation-burger {
@@ -186,12 +224,19 @@
     
     .header__working-hours-social-media {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         background-color: rgb(255, 93, 40);
+        padding: 10px;
     }
 
     .header__working-hours-container, .header__social-media-top {
-        padding: 25px 0;
+        display: flex;
+        flex: row;
+        justify-content: space-around;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
         color: var(--color-text-header-top-line);
         font-size: 11px;
         font-weight: bold;
@@ -205,13 +250,22 @@
     .header__content {
         display: flex;
         flex-direction: column;
-        text-align: left;
-        grid-gap: 30px;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
     .header__links {
         display: flex;
-        align-items: flex-end;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .header__description {
+        font-size: 16px;
+        color: var(--color-text-header);
+        font-weight: 700;
+        font-family: var(--font-text-menu-h);
     }
 
     .header__navigation {
